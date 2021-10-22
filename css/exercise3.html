@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise 3 - E-commerce Product Box</title>
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #222;
+      }
+      .container {
+        width: 300px;
+        min-height: 500px;
+        background: #fff;
+        margin: auto;
+        padding: 5px;
+      }
+      .itembox,
+      .thumb {
+        max-width: 100%;
+      }
+      .thumb {
+        border: 1px solid #ddd;
+        padding: 5px;
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .thumb img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .productname {
+        max-width: 100%;
+      }
+      .productname h4 {
+        max-width: 100%;
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+        color: #555;
+        padding: 10px 0;
+      }
+
+      .rating {
+        background: url("assets/images/rating-bar.png");
+        background-repeat: no-repeat;
+        max-width: 100%;
+        min-height: 10px;
+        background-position: 15px 7px;
+      }
+      .stars {
+        max-width: 100%;
+        text-align: center;
+        color: #f9aa1a;
+        font-size: 12px;
+      }
+
+      .price {
+        max-width: 100%;
+        text-align: center;
+      }
+      .price p {
+        font-size: 20px;
+        color: #333;
+        margin: 10px 0;
+      }
+
+      .actions {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .actions a {
+        text-decoration: none;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        background: #555;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #555;
+      }
+      .actions a:hover {
+        background: transparent;
+        border: 1px solid #555;
+        color: #000;
+      }
+      .actions i.fa-heart {
+        padding: 10px;
+        border: 1px solid #09c;
+        border-radius: 5px;
+        color: #09c;
+      }
+      .actions i.fa-chart-bar {
+        padding: 10px;
+        border: 1px solid #f00;
+        border-radius: 5px;
+        color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="itembox">
+        <div class="thumb">
+          <img src="assets/images/shoes.jpeg" />
+        </div>
+
+        <div class="productname">
+          <h4>Sports Shoes</h4>
+        </div>
+
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <p><i class="fas fa-rupee-sign"></i> 550.00</p>
+        </div>
+
+        <div class="actions">
+          <i class="fa fa-heart"></i>
+          <a href="#">Add to cart</a>
+          <i class="far fa-chart-bar"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

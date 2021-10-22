@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise 2 - WhatsApp Chat Screen</title>
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #222;
+      }
+      .container {
+        width: 350px;
+        height: 600px;
+        background: #fff;
+        margin: auto;
+        background: url("assets/whatsapp/chat-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container .topbar {
+        height: 50px;
+        width: 100%;
+        background: #09534b;
+      }
+      .container .topbar .usericon {
+        width: 70%;
+        float: left;
+      }
+      .container .topbar .usericon .profilepic {
+        width: 30%;
+        float: left;
+        text-align: center;
+        padding-top: 5px;
+      }
+      .container .topbar .usericon .username {
+        width: 70%;
+        float: left;
+      }
+      .container .topbar .usericon .username p {
+        font-size: 16px;
+        text-transform: capitalize;
+        margin: 6px 0 0 0;
+        padding: 0;
+        color: #fff;
+      }
+      .container .topbar .usericon .username span {
+        font-size: 10px;
+        color: #fff;
+      }
+      .container .topbar .usericon .profilepic img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .container .topbar .callOptions {
+        width: 30%;
+        height: 50px;
+        float: left;
+        line-height: 50px;
+        color: #fff;
+      }
+      .container .topbar .callOptions i {
+        margin-right: 15px;
+      }
+
+      .chatBox {
+        height: 500px;
+        overflow: auto;
+        width: 100%;
+      }
+      .chatBox ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding-bottom: 30px;
+        float: left;
+      }
+      .chatBox ul li {
+      }
+      .chatBox ul li .message {
+        width: 70%;
+        float: left;
+        margin-top: 10px;
+        background: #fff;
+        border-radius: 0 5px 5px 5px;
+        margin-left: 10px;
+        padding: 7px;
+        position: relative;
+      }
+      .chatBox ul li .message p {
+        margin: 0;
+        font-size: 14px;
+      }
+      .chatBox ul li .message p::after {
+        content: " ";
+        position: absolute;
+        left: -10px;
+        top: 0;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-width: 6px;
+        margin-right: -1px;
+      }
+
+      .chatBox ul li .message span {
+        margin: 0;
+        position: absolute;
+        right: 5px;
+        font-size: 8px;
+        bottom: 4px;
+      }
+      li.even .message {
+        float: right !important;
+        margin-right: 10px;
+        background: #deffc0 !important;
+      }
+      li.even .message p::after {
+        right: -7px !important;
+        border-left-color: #deffc0 !important;
+        border-top-color: #deffc0 !important;
+        left: auto !important;
+        border-right-color: transparent !important;
+      }
+
+      .footer {
+        padding: 5px 0;
+      }
+      .footer .textbox {
+        text-align: center;
+        position: relative;
+      }
+      .footer .textbox input {
+        width: 80%;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        border: 1px solid #ddd;
+        padding: 0 5px 0 50px;
+      }
+      .footer .textbox i.fa-laugh {
+        position: absolute;
+        top: 11px;
+        left: 24px;
+        font-size: 20px;
+        color: #666;
+      }
+      .footer .textbox i.fa-camera {
+        position: absolute;
+        right: 26px;
+        top: 12px;
+        color: #666;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="usericon">
+          <div class="profilepic">
+            <img src="assets/whatsapp/user-1.jpg" />
+          </div>
+          <div class="username">
+            <p>Jainee</p>
+            <span>Online</span>
+          </div>
+        </div>
+        <div class="callOptions">
+          <i class="fas fa-phone-alt"></i>
+          <i class="fas fa-video"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+
+      <div class="chatBox">
+        <ul>
+          <li>
+            <div class="message">
+              <p>
+                Hi John, how are you? <br />
+                are you there
+              </p>
+              <span>11:00 AM</span>
+            </div>
+          </li>
+
+          <li class="even">
+            <div class="message">
+              <p>
+                I'm good brother, how are you?
+              </p>
+              <span>11:10 AM</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="message">
+              <p>
+                Sounds good man! So are you coming?
+              </p>
+              <span>11:12 AM</span>
+            </div>
+          </li>
+
+          <li class="even">
+            <div class="message">
+              <p>
+                Yes, I'll be there within 1 hour, and when you are coming?
+              </p>
+              <span>11:13 AM</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="message">
+              <p>
+                I'm taking bath currently
+              </p>
+              <span>11:14 AM</span>
+            </div>
+          </li>
+          <li>
+            <div class="message">
+              <p>
+                Hopefully I'll be there within 1 hr
+              </p>
+              <span>11:15 AM</span>
+            </div>
+          </li>
+
+          <li class="even">
+            <div class="message">
+              <p>
+                okay! Try to bring something for me to eat in lunch
+              </p>
+              <span>11:20 AM</span>
+            </div>
+          </li>
+          <li class="even">
+            <div class="message">
+              <p>
+                maybe a pizza? &#127829;
+              </p>
+              <span>11:20 AM</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="message">
+              <p>
+                okay I will try to
+              </p>
+              <span>11:30 AM</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="message">
+              <p>
+                anything else?
+              </p>
+              <span>11:30 AM</span>
+            </div>
+          </li>
+
+          <li class="even">
+            <div class="message">
+              <p>
+                No, that's it.
+              </p>
+              <span>11:31 AM</span>
+            </div>
+          </li>
+
+          <li class="even">
+            <div class="message">
+              <p>
+                You are so helpfull
+              </p>
+              <span>11:31 AM</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <div class="textbox">
+          <i class="far fa-laugh"></i>
+          <input type="text" placeholder="Message" />
+          <i class="fas fa-camera"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
