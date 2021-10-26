@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise 4 - Instagram Home Screen</title>
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #222;
+      }
+      .container {
+        width: 300px;
+        min-height: 500px;
+        background: #fff;
+        margin: auto;
+        padding: 5px;
+      }
+      .header {
+        min-height: 100px;
+        max-width: 100%;
+        float: left;
+      }
+      .header .logo {
+        width: 40%;
+        float: left;
+      }
+      .header .logo img {
+        max-width: 100%;
+        height: auto;
+      }
+      .header .headerIcons {
+        width: 60%;
+        float: left;
+        text-align: right;
+      }
+      .header .headerIcons a {
+        padding: 10px;
+        float: right;
+        color: #222;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .stories {
+        margin-top: 10px;
+        clear: both;
+        float: left;
+      }
+      .stories a {
+        text-decoration: none;
+        float: left;
+        width: 50px;
+        margin: 0 5px;
+      }
+      .stories a img {
+        max-width: 100%;
+        border-radius: 50%;
+        border: 2px solid #e95950;
+        padding: 1px;
+      }
+
+      .feedbox {
+        height: 400px;
+        margin-top: 10px;
+
+        clear: both;
+        width: 100%;
+
+        overflow-y: scroll;
+      }
+      .feed {
+        width: 100%;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+
+        float: left;
+      }
+      .feed .topbar {
+        width: 100%;
+        float: left;
+      }
+      .feed .userinfo {
+        width: 90%;
+        float: left;
+      }
+      .feed .usericon {
+        width: 15%;
+        float: left;
+      }
+      .feed .userinfo img {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+      }
+      .feed .username {
+        max-width: 85%;
+        float: left;
+        padding: 10px;
+      }
+      .feed .username span {
+        font-size: 12px;
+      }
+      .feed .useropt {
+        width: 10%;
+        float: left;
+        padding-top: 12px;
+      }
+
+      .postcontent {
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+      }
+      .postcontent img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .options {
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+      }
+      .options a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #222;
+        margin: 0 5px;
+      }
+      .options a.save {
+        float: right;
+      }
+
+      .likes {
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+      }
+      .likes p {
+        margin: 0;
+        font-size: 12px;
+      }
+      .gray {
+        color: gray !important;
+        margin-top: 8px !important;
+      }
+
+      .footer {
+        max-width: 100%;
+        padding: 10px;
+        min-height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+      }
+      .footer a {
+        width: 20%;
+        float: left;
+        text-decoration: none;
+        color: #222;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="assets/images/ig.png" />
+        </div>
+        <div class="headerIcons">
+          <a href="#"> <i class="fab fa-facebook-messenger"></i> </a>
+          <a href="#"> <i class="far fa-plus-square"></i> </a>
+        </div>
+
+        <div class="stories">
+          <div class="userIcons">
+            <a href="#">
+              <img src="assets/whatsapp/user-1.jpg" />
+            </a>
+            <a href="#">
+              <img src="assets/whatsapp/user-2.jpg" />
+            </a>
+            <a href="#">
+              <img src="assets/whatsapp/user-3.jpg" />
+            </a>
+            <a href="#">
+              <img src="assets/whatsapp/user-4.jpg" />
+            </a>
+            <a href="#">
+              <img src="assets/whatsapp/user-5.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedbox">
+        <div class="feed">
+          <div class="topbar">
+            <div class="userinfo">
+              <div class="usericon">
+                <img src="assets/images/if.jpeg" />
+              </div>
+              <div class="username">
+                <span>Indian Cricet Team</span>
+              </div>
+            </div>
+
+            <div class="useropt">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+
+          <div class="postcontent">
+            <img src="assets/images/virat.jpeg" />
+          </div>
+
+          <div class="options">
+            <a href="#">
+              <i class="far fa-heart"></i>
+            </a>
+            <a href="#">
+              <i class="far fa-comment"></i>
+            </a>
+            <a href="#">
+              <i class="far fa-paper-plane"></i>
+            </a>
+
+            <a href="#" class="save">
+              <i class="far fa-bookmark"></i>
+            </a>
+          </div>
+
+          <div class="likes">
+            <p>Liked by <b>Mahesh</b> and <b>1,60,587</b> others...</p>
+            <p class="gray">View all 1245 comments</p>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="topbar">
+            <div class="userinfo">
+              <div class="usericon">
+                <img src="assets/images/if.jpeg" />
+              </div>
+              <div class="username">
+                <span>Indian Cricet Team</span>
+              </div>
+            </div>
+
+            <div class="useropt">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+
+          <div class="postcontent">
+            <img src="assets/images/virat.jpeg" />
+          </div>
+
+          <div class="options">
+            <a href="#">
+              <i class="far fa-heart"></i>
+            </a>
+            <a href="#">
+              <i class="far fa-comment"></i>
+            </a>
+            <a href="#">
+              <i class="far fa-paper-plane"></i>
+            </a>
+
+            <a href="#" class="save">
+              <i class="far fa-bookmark"></i>
+            </a>
+          </div>
+
+          <div class="likes">
+            <p>Liked by <b>Mahesh</b> and <b>1,60,587</b> others...</p>
+            <p class="gray">View all 1245 comments</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="#">
+          <i class="fa fa-home"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa fa-search"></i>
+        </a>
+
+        <a href="#">
+          <i class="far fa-play-circle"></i>
+        </a>
+
+        <a href="#">
+          <i class="far fa-heart"></i>
+        </a>
+
+        <a href="#">
+          <i class="far fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
