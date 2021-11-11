@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator Using JavaScript</title>
+    <style>
+      * {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      body {
+        background: linear-gradient(to right, #026a9b, #259ed7, #029fe9);
+      }
+      .container {
+        max-width: 400px;
+        margin: 10vh auto 0 auto;
+        box-shadow: 0px 0px 1px 10px #fff;
+      }
+
+      #display {
+        text-align: right;
+        height: 70px;
+        line-height: 70px;
+        padding: 16px 8px;
+        font-size: 25px;
+        color: #fff;
+      }
+
+      .buttons {
+        color: #fff;
+        display: grid;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid#FFF;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .buttons > div {
+        border-top: 1px solid #fff;
+        border-right: 1px solid#FFF;
+      }
+
+      .button {
+        border: 0.5px solid #fff;
+        line-height: 100px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      #equal {
+        background-color: rgb(8, 8, 44);
+        color: white;
+      }
+
+      .button:hover {
+        background-color: #323330;
+        color: white;
+        transition: 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="display"></div>
+
+      <div class="buttons">
+        <div class="button">C</div>
+        <div class="button">/</div>
+        <div class="button">*</div>
+        <div class="button">del</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button">-</div>
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button">+</div>
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button">.</div>
+        <div class="button">(</div>
+        <div class="button">0</div>
+        <div class="button">)</div>
+        <div id="equal" class="button">=</div>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
