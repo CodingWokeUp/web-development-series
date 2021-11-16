@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Progress Bar Animation using JavaScript</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 150px 350px;
+      }
+
+      #progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 8px;
+        background: linear-gradient(to right, #ff5f6d, #ffc371);
+        width: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="progress-bar"></div>
+
+    <div class="container">
+      <h1>Progress Bar Animation</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        explicabo nisi expedita soluta. Harum sed aliquam molestias! Voluptatem
+        aspernatur rerum quas illum esse ab, numquam molestiae sit non quam
+        suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Blanditiis explicabo nisi expedita soluta. Harum sed aliquam molestias!
+        Voluptatem aspernatur rerum quas illum esse ab, numquam molestiae sit
+        non quam suscipit.
+      </p>
+    </div>
+    <script src="progress-bar.js"></script>
+  </body>
+</html>
