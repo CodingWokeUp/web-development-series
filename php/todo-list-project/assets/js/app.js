@@ -7,3 +7,15 @@ form.addEventListener("submit", e => {
     e.preventDefault();
   }
 });
+
+// Hide alerts
+var close = document.getElementsByClassName("close");
+
+function hide() {
+  this.parentElement.remove();
+  return false;
+}
+
+for (var i = 0; i < close.length; i++) {
+  close[i].addEventListener("click", hide, false);
+}

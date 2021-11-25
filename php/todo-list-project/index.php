@@ -1,29 +1,27 @@
 <?php
-    //Database Connection
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "todoproject";
+    session_start();
+    include('config/database.php');
+    include('config/tasks.php');
+    $obj = new Tasks;
+    
+    if(isset($_POST['submit'])) {
+        // Insert Data in the Table
+        $task = $_POST['task'];
+        $created_at = $updated_at = date("Y-m-d H:i:s");
+        $sql = "INSERT INTO todolists (task, created_at, updated_at) VALUES ('".$task."', '".$created_at."', '".$updated_at."')";
+        $res = $obj->insertTask($sql);
 
-    //Create Connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    //echo "<pre>"; print_r($conn); exit;
-
-    if($conn->connect_error){
-        die("Connection failed: ".$conn->connect_error);
+        if($res) {
+            $_SESSION['success'] = "Task has been created successfully";
+        }
+        else {
+            $_SESSION['error'] = "Something went wrong, please try again later";
+        }
+        header("LOCATION:index.php");
     }
 
-    // Insert Data in the Table
-    $task = "Testing Task";
-    $created_at = $updated_at = date("Y-m-d H:i:s");
-    $sql = "INSERT INTO todolists (task, created_at, updated_at) VALUES ('".$task."', '".$created_at."', '".$updated_at."')";
-    $res = $conn->query($sql);
-    if($res)
-        echo "Data inserted";
-    else
-        echo "Query failed";
-
-    $conn->close();
+    //Get all Tasks
+    $tasks = $obj->getAllTasks();
 ?>
 
 
@@ -42,6 +40,9 @@
     <div class="container">
       <!--Step 2: Create input place and button-->
       <div id="newtask">
+        <?php include('include/alert.php') ?>
+
+
         <h3>Todo List Project</h3>
         <form action="index.php" method="post" id="taskform">
             <input type="text" name="task" id="task" placeholder="Task to be done..." />
@@ -50,29 +51,16 @@
       </div>
 
       <div id="tasks">
+        <?php
+            if(!empty($tasks)) {
+                foreach($tasks as $t) {
+        ?>
         <div class="task">
-            <span>YouTube video recording</span>
+            <span><?php echo $t['task'] ?></span>
             <button class="edit"><i class="fa fa-edit"></i></button>
             <button class="delete"><i class="fa fa-trash-alt"></i></button>
         </div>
-
-        <div class="task">
-            <span>Meeting with the client</span>
-            <button class="edit"><i class="fa fa-edit"></i></button>
-            <button class="delete"><i class="fa fa-trash-alt"></i></button>
-        </div>
-
-        <div class="task">
-            <span>Meeting with John at 1 pm</span>
-            <button class="edit"><i class="fa fa-edit"></i></button>
-            <button class="delete"><i class="fa fa-trash-alt"></i></button>
-        </div>
-
-        <div class="task">
-            <span>FB & Insta campaign monitoring</span>
-            <button class="edit"><i class="fa fa-edit"></i></button>
-            <button class="delete"><i class="fa fa-trash-alt"></i></button>
-        </div>
+        <?php }} ?>
       </div>
     </div>
 
