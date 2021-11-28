@@ -2,7 +2,7 @@
     class Tasks extends Database {
         
         //Function to insert data
-        public function insertTask($sql) {
+        public function executeQuery($sql) {
             $res = $this->connect()->query($sql);
             if($res)
                 return true;
@@ -24,5 +24,21 @@
 
             return $data;
         }
+
+        // Function to get all tasks
+        public function getTask($id) {
+            $sql = "select * from todolists where id = ".$id;
+            $result = $this->connect()->query($sql);
+
+            $data = array();
+            if($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    $data = $row;
+                }
+            }
+            return $data;
+        }
+
+
     }
 ?>

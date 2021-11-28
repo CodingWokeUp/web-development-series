@@ -89,7 +89,7 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
-.task button {
+.task .button {
   background-color: #db2525;
   color: #ffffff;
   border: none;
@@ -100,8 +100,9 @@ body {
   border-radius: 5px;
   float: right;
   margin-right: 5px;
+  text-align: center;
 }
-.task button.edit {
+.task .button.edit {
   background-color: #3d9afb;
 }
 
